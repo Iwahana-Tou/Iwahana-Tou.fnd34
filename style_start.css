@@ -1,0 +1,39 @@
+#title {
+    width: 830px;
+    height: auto;
+    position: absolute;
+    top: 91px;
+    left: 65px;
+}
+
+h1 {
+    position: absolute;
+    top: 0;
+    left: 387px;
+}
+
+#start {
+    position: absolute;
+    top: 240px;
+    left: 270px;
+    font-size: 40px;
+    width: 150px;
+    height: 40px;
+    color: #0012b9;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .44), 1px 1px 1px #0e0a4a;
+    border: 6px outset #0012b9;
+    display: inline-block;
+    padding: 0.8em 3em;
+    background-color: #36d7e3; /* 背景色 */
+    background: rgba(44,125,212,0.5);
+    box-shadow: 0 5px 0 #1c8aca; /* 影の太さ・色 */
+    border-radius: 60px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none; /* 文字の下線を消す */
+}
+
+#start:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
