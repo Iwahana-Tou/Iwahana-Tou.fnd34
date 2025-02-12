@@ -40,7 +40,7 @@ function start_game() {
   setTimeout(hidden4, 0);
   setTimeout(hidden5, 0);
 
-  setTimeout(stop_game1, 2000)
+  setTimeout(stop_game1, 15000)
 
   function stop_game1() {
     oshimai.style.display = "block";
