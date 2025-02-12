@@ -6,9 +6,9 @@ const mogura3 = document.getElementById("mogura3");
 const mogura4 = document.getElementById("mogura4");
 const mogura5 = document.getElementById("mogura5");
 const pikohan = document.getElementById("piko");
-const mogura_NG = "mogura2-1.png";
-const mogura_OK = "mogura1.png";
-const piko = "images/piko.png";
+const mogura_NG = "imag/mogura2-1.png";
+const mogura_OK = "imag/mogura1.png";
+const piko = "imag/piko.png";
 const oshimai = document.getElementById("oshimai")
 const three = document.getElementById("three")
 const two = document.getElementById("two")
@@ -65,7 +65,7 @@ function start_game() {
   }
 
   backToTitle.onclick = function() {
-    window.location.href = 'index_start.html';
+    window.location.href = 'index.html';
   }
 
   mogura1.addEventListener("click", pikopiko);
@@ -96,7 +96,7 @@ function start_game() {
 function start_onclick(moguraNum) {
   let result = moguraNum.getAttribute('src');
   
-  if(result === "images/mogura1.png") {
+  if(result === "imag/mogura1.png") {
     count();
   }
   onClick(moguraNum);
