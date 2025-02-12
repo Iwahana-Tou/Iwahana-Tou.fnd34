@@ -61,7 +61,7 @@ function start_game() {
   }
 
   retry.onclick = function() {
-    window.location.href = 'index.html';
+    window.location.href = 'index_main.html';
   }
 
   backToTitle.onclick = function() {
