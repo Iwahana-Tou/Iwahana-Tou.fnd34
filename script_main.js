@@ -169,7 +169,7 @@ function blockNum(num) {
 function hidden1() {
   mogura1.style.visibility = "hidden";
   if (game_end == false) {
-    setTimeout(visible1, 2000);
+    setTimeout(visible1, randomSec());
   }
 }
 
@@ -214,7 +214,7 @@ function visible3() {
 function hidden4() {
   mogura4.style.visibility = "hidden";
   if (game_end == false) {
-    setTimeout(visible4, 2000);
+    setTimeout(visible4, randomSec());
   }
 }
 
