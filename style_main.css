@@ -62,7 +62,7 @@ img {
     z-index: 30;
 }
 #layer {
-    display: none;  /* 初期表示は非表示 */
+    display: none;
     position: fixed; 
     left: 0px;
     top: 0px;
@@ -72,7 +72,7 @@ img {
     opacity: 0.40;
 }
 #shimaenaga {
-    display: none;  /* 初期表示は非表示 */
+    display: none;
     width: 775px;
     height: auto;
     position: absolute;
@@ -92,13 +92,13 @@ img {
     border: 6px outset #0012b9;
     display: inline-block;
     padding: 0.8em 3em;
-    background-color: #36d7e3; /* 背景色 */
+    background-color: #36d7e3;
     background: rgba(44,125,212,0.5);
-    box-shadow: 0 5px 0 #1c8aca; /* 影の太さ・色 */
+    box-shadow: 0 5px 0 #1c8aca;
     border-radius: 60px;
     color: #fff;
     cursor: pointer;
-    text-decoration: none; /* 文字の下線を消す */
+    text-decoration: none;
     z-index: 50;
 }
 #retry:active {
@@ -117,13 +117,13 @@ img {
     border: 6px outset #0012b9;
     display: inline-block;
     padding: 0.8em 3em;
-    background-color: #36d7e3; /* 背景色 */
+    background-color: #36d7e3; 
     background: rgba(44,125,212,0.5);
-    box-shadow: 0 5px 0 #1c8aca; /* 影の太さ・色 */
+    box-shadow: 0 5px 0 #1c8aca; 
     border-radius: 60px;
     color: #fff;
     cursor: pointer;
-    text-decoration: none; /* 文字の下線を消す */
+    text-decoration: none; 
     z-index: 50;
 }
 
@@ -133,7 +133,7 @@ img {
 }
 
 #oshimai {
-    display: none;  /* 初期表示は非表示 */
+    display: none;  
     width: 920px;
     height: 560px;
     position: absolute;
@@ -143,7 +143,7 @@ img {
 }
 
 #three {
-    display: block;  /* 初期表示は非表示 */
+    display: block;  
     width: 225px;
     height: auto;
     position: absolute;
@@ -152,7 +152,7 @@ img {
     z-index: 40;
 }
 #two {
-    display: none;  /* 初期表示は非表示 */
+    display: none;  
     width: 225px;
     height: auto;
     position: absolute;
@@ -161,7 +161,7 @@ img {
     z-index: 40;
 }
 #one {
-    display: none;  /* 初期表示は非表示 */
+    display: none;  
     width: 225px;
     height: auto;
     position: absolute;
