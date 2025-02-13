@@ -48,7 +48,6 @@ function start_game() {
   }
 
   function stop_game2() {
-    // oshimai.style.display = "none";
     const lay = document.getElementById("layer")
     const shima = document.getElementById("shimaenaga")
 
@@ -127,8 +126,8 @@ function pikopiko(event) {
   let y;
   let yv;
   let rect = event.target.getBoundingClientRect();
-      x = event.clientX- rect.left;//x座標（左右）の位置指定
-      y = event.clientY- rect.top;//y座標の（上下）の位置指定
+      x = event.clientX- rect.left;
+      y = event.clientY- rect.top;
   pikohan.style.visibility = "visible";
   pikohan.style.position = "absolute";
   if(event.srcElement.id === "mogura1") {
