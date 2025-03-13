@@ -6,6 +6,7 @@ const mogura3 = document.getElementById("mogura3");
 const mogura4 = document.getElementById("mogura4");
 const mogura5 = document.getElementById("mogura5");
 const pikohan = document.getElementById("piko");
+const timer = document.getElementById("countdown");
 const mogura_NG = "imag/mogura2-1.png";
 const mogura_OK = "imag/mogura1.png";
 const piko = "imag/piko.png";
@@ -40,7 +41,9 @@ function start_game() {
   setTimeout(hidden4, 0);
   setTimeout(hidden5, 0);
 
-  setTimeout(stop_game1, 15000)
+  //タイマー
+  const target = new Date().getTime() + 15000;
+  window.requestAnimationFrame(countDown);
 
   function stop_game1() {
     oshimai.style.display = "block";
@@ -88,6 +91,23 @@ function start_game() {
   }
   mogura5.onclick = function() {
     start_onclick(mogura5);
+  }
+
+  //タイマー
+  function countDown() {
+    const now = new Date().getTime();
+    const distance = target - now;
+    
+    if(distance < 0) {
+      stop_game1();
+    } else {
+      const seconds = Math.floor((distance % (1000 * 60) ) / 1000);
+      const miliseconds = distance < 0 ? 0 : Math.floor(distance % 1000);
+  
+      timer.innerHTML = `${String(seconds).padStart(2, '0')}.${ String(miliseconds).padStart(3, '0')}`;
+      
+      window.requestAnimationFrame(countDown);
+    }
   }
 }
 
