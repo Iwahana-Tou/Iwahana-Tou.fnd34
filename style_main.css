@@ -5,6 +5,13 @@ h1 {
     z-index: calc(infinity);
 }
 
+#countdown {
+    position: absolute;
+    top: 5px;
+    left: 730px;
+    font-size: 40px;
+}
+
 #count {
     font-size: 60px;
 }
